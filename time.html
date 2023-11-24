@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Update Date</title>
+    <script>
+      // Function to update the date
+      function updateDate() {
+        var currentDate = new Date();
+        var options = { year: "numeric", month: "short", day: "numeric" };
+        var formattedDate = currentDate.toLocaleDateString("en-US", options);
+
+        // Update the content of the element with id "currentDate"
+        document.getElementById("currentDate").textContent = formattedDate;
+      }
+
+      // Run the function when the page loads
+      window.onload = function () {
+        updateDate();
+
+        // Set up an interval to update the date every minute (adjust as needed)
+        setInterval(updateDate, 60000); // 60000 milliseconds = 1 minute
+      };
+    </script>
+  </head>
+  <body>
+    <span id="currentDate"></span>
+  </body>
+</html>
