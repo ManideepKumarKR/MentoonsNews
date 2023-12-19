@@ -16,6 +16,33 @@
     <link href="assets/css/normalize.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/slicknav.min.css" rel="stylesheet" type="text/css" />
 
+    <!-- form css -->
+    <style>
+        #myModal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+        }
+
+        #myModal .modal-content {
+            background-color: #fefefe;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        #closeBtn {
+            float: right;
+            cursor: pointer;
+        }
+    </style>
     <!-- Site CSS -->
 
     <link href="assets/css/main.css?v=3.0" rel="stylesheet" type="text/css" />
@@ -289,6 +316,7 @@
                                         </ul>
                                     </li>
                                     <li><a href="trending.html">Trending</a></li>
+                                    <li><a href="Events.html">Events</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -330,10 +358,80 @@
                                             <img src="assets/img/social.jpg" alt="" />
                                         </div>
                                         <div class="item">
-                                            <img src="assets/img/mentoons news image-01.jpg" alt="" />
+                                            <img src="assets/img/Instant.jpg" alt="" />
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="assets/img/Diy (2).jpg" alt="" />
                                         </div>
                                         <div class="item">
-                                            <img src="assets/img/journy.png" alt="" />
+                                            <img src="assets/img/PREPPERS BOX DESIGN.jpg" alt="" />
+                                        </div>
+                                        <div class="item">
+                                            <img src="assets/img/comic workshop.jpg" alt="" />
+                                        </div>
+                                        <div class="item">
+                                            <img src="assets/img/Hasyaras.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-danger" id="button"
+                                            onclick="openForm()">Enroll Now </button>
+
+                                        <div id="myModal">
+                                            <div class="modal-content">
+                                                <span id="closeBtn" onclick="closeForm()">&times;</span>
+                                                <h2>Primary Details</h2>
+
+                                                <form action="https://formsubmit.co/metalmahesh@gmail.com" method="POST"
+                                                    id="myForm" onsubmit="submitForm(event)">
+
+                                                    <input placeholder="Name" type="text" id="name" name="name" required
+                                                        pattern="[A-Za-z ]+"><br><br>
+
+
+                                                    <input placeholder="Phone Number" type="text" id="Phone"
+                                                        name="Phone" required pattern="^[6-9]\d{9}$"><br><br>
+
+
+                                                    <input placeholder="Age" type="number" id="age" name="age" min="1"
+                                                        max="28" required><br><br>
+
+
+
+                                                    <input placeholder="Email" type="email" id="email" name="email"
+                                                        required
+                                                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"><br><br>
+
+
+
+
+
+                                                    <select id="workshop" name="workshop" required>
+                                                        <option value="" selected disabled>Gender</option>
+                                                        <option value="Male">Male</option>
+                                                        <option value="Female">Female</option>
+                                                        <option value="Other">Other</option>
+
+                                                    </select>
+                                                    <br><br>
+
+
+                                                    <select id="workshop" name="workshop" required>
+                                                        <option value="" selected disabled>Choose a Workshop</option>
+                                                        <option value="social savvy">Social Savvy</option>
+                                                        <option value="instant katha">Instant Katha</option>
+                                                        <option value="Do it yourself">Do It Yourself</option>
+                                                        <option value="Preppers">Preppers</option>
+                                                        <option value="Make your own comic">Make your own comic</option>
+
+                                                        <option value="Hasyaras">Hasyaras</option>
+                                                    </select>
+                                                    <br><br>
+
+                                                    <input type="submit" value="Submit" class="btn btn-info">
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="post-content">
@@ -710,6 +808,19 @@
         <script src="assets/js/time.js"></script>
     </div>
     <!--#wrapper-->
+
+    <!-- button script -->
+    <script>
+        function openForm() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+
+    </script>
 </body>
 
 </html>
