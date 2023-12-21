@@ -1,32 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Auto Update Date</title>
-    <script>
-      // Function to update the date
-      function updateDate() {
-        var currentDate = new Date();
-        var options = { year: "numeric", month: "short", day: "numeric" };
-        var formattedDate = currentDate.toLocaleDateString("en-US", options);
 
-        // Update the content of the element with id "currentDate"
-        document.getElementById("currentDate").textContent = formattedDate;
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Player</title>
+  <style>
+    #video-container {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+    }
+
+    #play-pause-btn,
+    #next-video-btn,
+    #replay-btn {
+      cursor: pointer;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="video-container">
+    <video id="video-player" controls>
+      <source src="videos/PODCAST_INTRO_01.mp4" type="video/mp4">
+
+      <!-- Add more <source> elements for additional videos -->
+      Your browser does not support the video tag.
+    </video>
+    <button id="play-pause-btn">Play</button>
+    <button id="next-video-btn">Next Video</button>
+    <button id="replay-btn">Replay</button>
+    <label for="video-selector">Select a video:</label>
+    <select id="video-selector">
+      <option value="videos/PODCAST_INTRO_01.mp4">Video 1</option>
+      <option value="videos/SHILPI_ANCHOR.mp4">Video 2</option>
+      <option value="videos/PODCAST_INTRO_01.mp4">Video 3</option>
+      <!-- Add more options for additional videos -->
+    </select>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var videoPlayer = document.getElementById("video-player");
+      var playPauseButton = document.getElementById("play-pause-btn");
+      var nextVideoButton = document.getElementById("next-video-btn");
+      var replayButton = document.getElementById("replay-btn");
+      var videoSelector = document.getElementById("video-selector");
+
+      var videos = ["videos/PODCAST_INTRO_01.mp4", "videos/SHILPI_ANCHOR.mp4", "videos/PODCAST_INTRO_01.mp4"]; // Add more video URLs
+
+      var currentVideoIndex = 0;
+
+      function playNextVideo() {
+        if (currentVideoIndex < videos.length - 1) {
+          currentVideoIndex++;
+        } else {
+          currentVideoIndex = 0;
+        }
+        videoPlayer.src = videos[currentVideoIndex];
+        videoPlayer.play();
       }
 
-      // Run the function when the page loads
-      window.onload = function () {
-        updateDate();
+      replayButton.addEventListener("click", function () {
+        videoPlayer.currentTime = 0; // Rewind the video to the beginning
+        videoPlayer.play();
+      });
 
-        // Set up an interval to update the date every minute (adjust as needed)
-        setInterval(updateDate, 60000); // 60000 milliseconds = 1 minute
-      };
-    </script>
-  </head>
-  <body>
-    <span id="currentDate"></span>
-    <i class="fa fa-twitter"> hi</i>
-    <aside></aside>
-  </body>
+      playPauseButton.addEventListener("click", function () {
+        if (videoPlayer.paused) {
+          videoPlayer.play();
+          playPauseButton.textContent = "Pause";
+        } else {
+          videoPlayer.pause();
+          playPauseButton.textContent = "Play";
+        }
+      });
+
+      nextVideoButton.addEventListener("click", function () {
+        playNextVideo();
+      });
+
+      videoSelector.addEventListener("change", function () {
+        var selectedVideo = videoSelector.value;
+        videoPlayer.src = selectedVideo;
+        videoPlayer.play();
+      });
+
+      videoPlayer.addEventListener("ended", function () {
+        playNextVideo();
+      });
+    });
+  </script>
+
+</body>
+
 </html>
