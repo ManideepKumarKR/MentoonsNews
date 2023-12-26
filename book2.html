@@ -5,7 +5,7 @@
     <!-- Meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Recent Posts</title>
+    <title>Audio Book</title>
 
     <!-- Bootstrap, Font Awesome, Aminate, Owl Carausel, Normalize CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -20,7 +20,16 @@
 
     <link href="assets/css/main.css?v=3.0" rel="stylesheet" type="text/css" />
     <link href="assets/css/responsive.css?v=3.0" rel="stylesheet" type="text/css" />
-
+    <!-- css for button -->
+    <style>
+        #play-pause-btn,
+        #replay-btn,
+        #next-video-btn {
+            cursor: pointer;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+    </style>
     <!-- Modernizr JS -->
     <script src="assets/js/modernizr-3.5.0.min.js"></script>
 
@@ -319,21 +328,20 @@
             <div class="container-fluid">
                 <div class="container wow animate__animated animate__fadeIn">
                     <div class="row">
-                        <div class="archive-header">
-                            <div class="archive-title">
-                                <h2>Recent Posts</h2>
-                            </div>
-                            <div class="archive-description">
-                                <!-- <p>Share some home tips &ndash; For better life</p> -->
-                            </div>
+                        <div class="post-header">
                             <div class="bread">
                                 <ul class="breadcrumbs" id="breadcrumbs">
                                     <li class="item-home">
-                                        <a title="Home" href="index.html" class="bread-link bread-home"> </a>
+                                        <a title="Home" href="index.html" class="bread-link bread-home"></a>
                                     </li>
-                                    <li class="separator separator-home"> </li>
+                                    <li class="separator separator-home"></li>
                                     <li class="item-current item-cat">
-                                        <!-- <strong class="bread-current bread-cat">House &amp; Living</strong> -->
+                                        <a title="Home" href="index.html" class="bread-link bread-home">Do You Now?
+                                            Audio Book</a>
+                                    </li>
+                                    <li class="separator separator-home"></li>
+                                    <li class="item-current item-cat">
+                                        <strong class="bread-current bread-cat"> </strong>
                                     </li>
                                 </ul>
                             </div>
@@ -345,347 +353,52 @@
                 <div class="container">
                     <div class="primary margin-15">
                         <div class="row">
-                            <div class="col-md-8">
-                                <div class="post_list post_list_style_1">
-                                    <article class="row section_margin wow animate__animated animate__fadeIn">
-                                        <div class="col-md-6 wow animate__animated animate__fadeIn">
-                                            <figure class="alith_news_img">
-                                                <a href="familyConflicts.html"><img
-                                                        src="assets/images/thumb_medium_1.png" alt="" /></a>
-                                            </figure>
-                                        </div>
-                                        <div class="col-md-6 wow animate__animated animate__fadeIn">
-                                            <h3 class="alith_post_title">
-                                                <a href="familyConflicts.html">Family Conflict and Its Effect on
-                                                    Teenagers</a>
-                                            </h3>
-                                            <div class="post_meta">
-                                                <a href="page-author.html" class="meta_author_avatar"><img
-                                                        src="assets/images/author-avatar.png"
-                                                        alt="author details" /></a>
-                                                <span class="meta_author_name"><a href="page-author.html"
-                                                        class="author">Mentor
-                                                        Mahesh</a></span>
-                                                <span class="meta_categories"><a href="index.html"> </a>
-                                                    <a href="index.html">News</a></span>
-                                                <!-- <span class="meta_date">18 Sep, 2023</span> -->
-                                            </div>
-                                            <p class="alith_post_except">
-                                                When people live together under one roof, it is common to have
-                                                disagreements and arguments because of a personality clash. Due to this,
-                                                there is an increase in the gap between parents and children.
-                                            </p>
-                                            <a href="familyConflicts.html" class="read_more">Read More</a>
-                                        </div>
-                                    </article>
-                                    <article class="row section_margin wow animate__animated animate__fadeIn sticky">
-                                        <div class="col-md-6 wow animate__animated animate__fadeIn">
-                                            <figure class="alith_news_img">
-                                                <a href="commonParentingMistakes.html"><img src="assets/img/8.jpg"
-                                                        alt="" /></a>
-                                            </figure>
-                                        </div>
-                                        <div class="col-md-6 wow animate__animated animate__fadeIn">
-                                            <h3 class="alith_post_except">
-                                                <a href="commonParentingMistakes.html">Common parenting mistakes</a>
-                                            </h3>
-                                            <div class="post_meta">
-                                                <a href="page-author.html" class="meta_author_avatar"><img
-                                                        src="assets/images/author-avatar.png"
-                                                        alt="author details" /></a>
-                                                <span class="meta_author_name"><a href="page-author.html"
-                                                        class="author">Mentor
-                                                        Mahesh</a></span>
-                                                <span class="meta_categories"><a href="index.html"></a>
-                                                    <a href="index.html">NEWS</a></span>
-                                                <!-- <span class="meta_date">March 14,2023</span> -->
-                                            </div>
-                                            <p class="alith_post_except">
-                                                Let your child learn to struggle. Even if he falls, let him stand on
-                                                their own and allow them to start again. Children should understand that
-                                                failure is part of life and its okay to fail but not give up and work
-                                                even more harder and succeed. It builds a sense of confidence in them.
-                                            </p>
-                                            <a href="commonParentingMistakes.html" class="read_more">Read More</a>
-                                        </div>
-                                    </article>
-                                    <article class="row section_margin wow animate__animated animate__fadeIn">
-                                        <div class="col-md-4 wow animate__animated animate__fadeIn">
-                                            <figure class="alith_news_img">
-                                                <a href="SocialMediaDeaddiction.html"><img
-                                                        src="assets/img/social media de-addiction.jpg" alt="" /></a>
-                                            </figure>
-                                        </div>
-                                        <div class="col-md-8 wow animate__animated animate__fadeIn">
-                                            <h3 class="alith_post_title">
-                                                <a href="SocialMediaDeaddiction.html">Social media de-addiction</a>
-                                            </h3>
-                                            <div class="post_meta">
-                                                <a href="page-author.html" class="meta_author_avatar"><img
-                                                        src="assets/images/author-avatar.png"
-                                                        alt="author details" /></a>
-                                                <span class="meta_author_name"><a href="page-author.html"
-                                                        class="author">Mentor
-                                                        Mahesh</a></span>
-                                                <span class="meta_categories"><a href="index.html"> </a>
-                                                    <a href="index.html">News</a></span>
-                                                <!-- <span class="meta_date">18 Sep, 2023</span> -->
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article class="row section_margin wow animate__animated animate__fadeIn">
-                                        <div class="col-md-4 wow animate__animated animate__fadeIn">
-                                            <figure class="alith_news_img">
-                                                <a href="TeenEmotions.html"><img src="assets/img/4055173.jpg"
-                                                        alt="" /></a>
-                                            </figure>
-                                        </div>
-                                        <div class="col-md-8 wow animate__animated animate__fadeIn">
-                                            <h3 class="alith_post_title">
-                                                <a href="TeenEmotions.html">Teen Emotions and Behavioural Problems</a>
-                                            </h3>
-                                            <div class="post_meta">
-                                                <a href="page-author.html" class="meta_author_avatar"><img
-                                                        src="assets/images/author-avatar.png"
-                                                        alt="author details" /></a>
-                                                <span class="meta_author_name"><a href="page-author.html"
-                                                        class="author">Mentor
-                                                        Mahesh</a></span>
-                                                <span class="meta_categories"><a href="index.html"> </a>
-                                                    <a href="index.html">News</a></span>
-                                                <!-- <span class="meta_date">18 Sep, 2023</span> -->
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article class="row section_margin wow animate__animated animate__fadeIn">
-                                        <div class="col-md-4 wow animate__animated animate__fadeIn">
-                                            <figure class="alith_news_img">
-                                                <a href="socialSavvy.html"><img src="assets/img/social.jpg"
-                                                        alt="" /></a>
-                                            </figure>
-                                        </div>
-                                        <div class="col-md-8 wow animate__animated animate__fadeIn">
-                                            <h3 class="alith_post_title">
-                                                <a href="socialSavvy.html">SOCIAL SAVVY - A Workshop</a>
-                                            </h3>
-                                            <div class="post_meta">
-                                                <a href="page-author.html" class="meta_author_avatar"><img
-                                                        src="assets/images/author-avatar.png"
-                                                        alt="author details" /></a>
-                                                <span class="meta_author_name"><a href="page-author.html"
-                                                        class="author">Mentor
-                                                        Mahesh</a></span>
-                                                <span class="meta_categories"><a href="index.html"> </a>
-                                                    <a href="index.html">News</a></span>
-                                                <!-- <span class="meta_date">18 Sep, 2023</span> -->
-                                            </div>
-                                        </div>
-                                    </article>
+                            <div class="col-md-12">
+                                <div id="video-container"
+                                    class="alith_news_img wow animate__animated animate__fadeIn section_margin_30">
+                                    <video id="video-player" controls frameborder="0" webkitallowfullscreen
+                                        mozallowfullscreen allowfullscreen width="100%">
+                                        <source src="videos/BOOK 3 DO YOU KNOW_FINAL.mp4" type="video/mp4">
 
+                                        <!-- Add more <source> elements for additional videos -->
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <div class="single-header">
+                                        <h3 class="alith_post_title">
+                                            Do You Know?
 
+                                        </h3>
+                                        <p>Audio Book on 'Do You Know?' is an innovative storytelling experience that
+                                            explores fascinating facts, trivia, and interesting tidbits about the world.
+                                            Through engaging narration, sound effects, and vibrant characters, listeners
+                                            embark on an entertaining journey of discovery, answering intriguing
+                                            questions and uncovering surprising insights about a variety of subjects.
+                                            This unique fusion of audio entertainment and informative content makes
+                                            learning a delightful and immersive experience.</p>
+                                    </div>
 
-
+                                    <button id="play-pause-btn" class="btn btn-primary">Play</button>
+                                    <button id="replay-btn" class="btn btn-danger">Replay</button>
+                                    <!-- <button id="next-video-btn" class="btn btn-success">Next Episode</button> -->
+                                    <br><br>
+                                    <!-- <label for="video-selector">Select a video:</label> -->
+                                    <!-- <select id="video-selector">
+                                        <option value="videos/PODCAST_INTRO_01.mp4" class="btn btn-warning">Episode 1
+                                        </option>
+                                        <option value="videos/SHILPI_ANCHOR.mp4" class="btn btn-warning">Episode 2
+                                        </option>
+                                        <option value="videos/PODCAST_INTRO_01.mp4" class="btn btn-warning">Episode 3
+                                        </option>
+                                        
+                                    </select> -->
                                 </div>
+
+
+
+
                             </div>
-                            <!--Start Sidebar-->
-                            <aside class="col-md-4">
-                                <div class="sidebar_right">
-                                    <div class="sidebar-widget wow animate__animated animate__fadeIn">
-                                        <div class="widget-title-cover">
-                                            <h4 class="widget-title">
-                                                <span>Popular Articles</span>
-                                            </h4>
-                                        </div>
-                                        <div class="latest_style_1">
-                                            <div class="latest_style_1_item">
-                                                <span class="item-count vertical-align">1.</span>
-                                                <div class="alith_post_title_small">
-                                                    <a href="SocialMediaDeaddiction.html"><strong>Social media
-                                                            de-addiction</strong></a>
-                                                    <p class="meta">
-                                                        <!-- <span>2 Sep, 2023</span> <span>268 views</span> -->
-                                                    </p>
-                                                </div>
-                                                <figure class="alith_news_img">
-                                                    <a href="SocialMediaDeaddiction.html"><img
-                                                            src="assets/img/deaddiction2.jpg" alt="" /></a>
-                                                </figure>
-                                            </div>
-                                            <div class="latest_style_1_item">
-                                                <span class="item-count vertical-align">2.</span>
-                                                <div class="alith_post_title_small">
-                                                    <a href="CellPhoneAddiction.html"><strong>Cell-phone
-                                                            addiction</strong></a>
-                                                    <p class="meta">
-                                                        <!-- <span>2 Sep, 2023</span> <span>268 views</span> -->
-                                                    </p>
-                                                </div>
-                                                <figure class="alith_news_img">
-                                                    <a href="CellPhoneAddiction.html"><img
-                                                            src="assets/img/social media de-addiction.jpg" alt="" /></a>
-                                                </figure>
-                                            </div>
-                                            <div class="latest_style_1_item">
-                                                <span class="item-count vertical-align">3.</span>
-                                                <div class="alith_post_title_small">
-                                                    <a href="commonParentingMistakes.html"><strong>Common parenting
-                                                            mistakes</strong></a>
-                                                    <p class="meta">
-                                                        <!-- <span>2 Sep, 2023</span> <span>268 views</span> -->
-                                                    </p>
-                                                </div>
-                                                <figure class="alith_news_img">
-                                                    <a href="commonParentingMistakes.html"><img src="assets/img/9.jpg"
-                                                            alt="" /></a>
-                                                </figure>
-                                            </div>
-                                            <div class="latest_style_1_item">
-                                                <span class="item-count vertical-align">4.</span>
-                                                <div class="alith_post_title_small">
-                                                    <a href="MaintainingRelationships.html"><strong>Maintaing
-                                                            relationships with
-                                                            teenagers</strong></a>
-                                                    <p class="meta">
-                                                        <!-- <span>2 Sep, 2023</span> <span>268 views</span> -->
-                                                    </p>
-                                                </div>
-                                                <figure class="alith_news_img">
-                                                    <a href="MaintainingRelationships.html"><img
-                                                            src="assets/img/teens2.jpg" alt="" /></a>
-                                                </figure>
-                                            </div>
-                                            <div class="latest_style_1_item">
-                                                <span class="item-count vertical-align">5.</span>
-                                                <div class="alith_post_title_small">
-                                                    <a href="TeenEmotions.html"><strong>Teen Emotions and Behavioural
-                                                            Problems</strong></a>
-                                                    <p class="meta">
-                                                        <!-- <span>2 Sep, 2023</span> <span>268 views</span> -->
-                                                    </p>
-                                                </div>
-                                                <figure class="alith_news_img">
-                                                    <a href="TeenEmotions.html"><img
-                                                            src="assets/images/thumb-square-5.png" alt="" /></a>
-                                                </figure>
-                                            </div>
-                                            <div class="latest_style_1_item">
-                                                <span class="item-count vertical-align">6.</span>
-                                                <div class="alith_post_title_small">
-                                                    <a href="theMagicalJourny.html"><strong>The Magical Journey to
-                                                            Self-Discovery</strong></a>
-                                                    <p class="meta">
-                                                        <!-- <span>2 Sep, 2023</span> <span>268 views</span> -->
-                                                    </p>
-                                                </div>
-                                                <figure class="alith_news_img">
-                                                    <a href="theMagicalJourny.html"><img src="assets/img/journy.jpg"
-                                                            alt="" /></a>
-                                                </figure>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-                                    <!--.sidebar-widget-->
-
-
-
-                                    <div class="sidebar-widget wow animate__animated animate__fadeIn">
-                                        <div class="widget-title-cover">
-                                            <h4 class="widget-title"><span>Search</span></h4>
-                                        </div>
-                                        <form action="#" class="search-form" method="get" role="search">
-                                            <label>
-                                                <input type="search" name="s" value="" placeholder="Search …"
-                                                    class="search-field" />
-                                            </label>
-                                            <input type="submit" value="Search" class="search-submit" />
-                                        </form>
-                                    </div>
-                                    <!--.sidebar-widget-->
-
-                                    <div class="sidebar-widget wow animate__animated animate__fadeIn">
-                                        <div class="widget-title-cover">
-                                            <h4 class="widget-title"><span>Trending</span></h4>
-                                        </div>
-                                        <div class="latest_style_2">
-                                            <div class="latest_style_2_item_first">
-                                                <figure class="alith_post_thumb_big">
-                                                    <span class="post_meta_categories_label">Workshop</span>
-                                                    <a href="socialSavvy.html"><img src="assets/img/social.jpg"
-                                                            alt="" /></a>
-                                                </figure>
-                                                <h3 class="alith_post_title">
-                                                    <a href="socialSavvy.html"><strong>SOCIAL SAVVY - A
-                                                            Workshop</strong></a>
-                                                </h3>
-                                            </div>
-                                            <div class="latest_style_2_item">
-                                                <figure class="alith_news_img">
-                                                    <a href="familyConflicts.html"><img src="assets/img/effect-02.jpg"
-                                                            alt="" /></a>
-                                                </figure>
-                                                <h3 class="alith_post_title">
-                                                    <a href="familyConflicts.html">
-                                                        Family conflict and its effect on teenagers
-                                                    </a>
-                                                </h3>
-                                                <div class="post_meta">
-                                                    <!-- <span class="meta_date">18 Sep, 2023</span> -->
-                                                </div>
-                                            </div>
-                                            <div class="latest_style_2_item">
-                                                <figure class="alith_news_img">
-                                                    <a href="commonParentingMistakes.html"><img src="assets/img/8.jpg"
-                                                            alt="" /></a>
-                                                </figure>
-                                                <h3 class="alith_post_title">
-                                                    <a href="commonParentingMistakes.html">Common parenting mistakes</a>
-                                                </h3>
-                                                <div class="post_meta">
-                                                    <!-- <span class="meta_date">18 Sep, 2023</span> -->
-                                                </div>
-                                            </div>
-                                            <div class="latest_style_2_item">
-                                                <figure class="alith_news_img">
-                                                    <a href="single1.html"><img
-                                                            src="assets/img/mentoons news image-01.jpg" alt="" /></a>
-                                                </figure>
-                                                <h3 class="alith_post_title">
-                                                    <a href="single1.html">Instant Katha App</a>
-                                                </h3>
-                                                <div class="post_meta">
-                                                    <!-- <span class="meta_date">18 Sep, 2023</span> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--.sidebar-widget-->
-
-                                    <div class="sidebar-widget wow animate__animated animate__fadeIn">
-                                        <div class="widget-title-cover">
-                                            <h4 class="widget-title"><span>Tags cloud</span></h4>
-                                        </div>
-                                        <div class="alith_tags_all">
-                                            <a href="#" class="alith_tagg">Business</a>
-                                            <a href="#" class="alith_tagg">Technology</a>
-                                            <a href="#" class="alith_tagg">Sport</a>
-                                            <a href="#" class="alith_tagg">Art</a>
-                                            <a href="#" class="alith_tagg">Lifestyle</a>
-                                            <a href="#" class="alith_tagg">Three</a>
-                                            <a href="#" class="alith_tagg">Photography</a>
-                                            <a href="#" class="alith_tagg">Lifestyle</a>
-                                            <a href="#" class="alith_tagg">Art</a>
-                                            <a href="#" class="alith_tagg">Education</a>
-                                            <a href="#" class="alith_tagg">Social</a>
-                                            <a href="#" class="alith_tagg">Three</a>
-                                        </div>
-                                    </div>
-                                    <!--.sidebar-widget-->
-                                </div>
-                            </aside>
-                            <!--End Sidebar-->
                         </div>
+
                     </div>
                     <!--.primary-->
                 </div>
@@ -735,8 +448,8 @@
                                                         src="assets/images/thumb_medium_1.jpg" class="hover_grey" /></a>
                                             </figure>
                                             <h3 class="alith_post_title">
-                                                <a href="familyConflicts.html">Family conflict and its effect on
-                                                    teenagers</a>
+                                                <a href="familyConflicts.html
+                        ">Family conflict and its effect on teenagers</a>
                                             </h3>
                                         </div>
                                         <div class="latest_style_2_item">
@@ -925,6 +638,62 @@
         <script src="assets/js/time.js"></script>
     </div>
     <!--#wrapper-->
+
+    <!-- script for podcast -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var videoPlayer = document.getElementById("video-player");
+            var playPauseButton = document.getElementById("play-pause-btn");
+            var nextVideoButton = document.getElementById("next-video-btn");
+            var replayButton = document.getElementById("replay-btn");
+            var videoSelector = document.getElementById("video-selector");
+
+            var videos = ["videos/PODCAST_INTRO_01.mp4", "videos/SHILPI_ANCHOR.mp4", "videos/PODCAST_INTRO_01.mp4"]; // Add more video URLs
+
+            var currentVideoIndex = 0;
+
+            function playNextVideo() {
+                if (currentVideoIndex < videos.length - 1) {
+                    currentVideoIndex++;
+                } else {
+                    currentVideoIndex = 0;
+                }
+                videoPlayer.src = videos[currentVideoIndex];
+                videoPlayer.play();
+            }
+
+            replayButton.addEventListener("click", function () {
+                videoPlayer.currentTime = 0; // Rewind the video to the beginning
+                videoPlayer.play();
+            });
+
+            playPauseButton.addEventListener("click", function () {
+                if (videoPlayer.paused) {
+                    videoPlayer.play();
+                    playPauseButton.textContent = "Pause";
+                } else {
+                    videoPlayer.pause();
+                    playPauseButton.textContent = "Play";
+                }
+            });
+
+            nextVideoButton.addEventListener("click", function () {
+                playNextVideo();
+            });
+
+            videoSelector.addEventListener("change", function () {
+                var selectedVideo = videoSelector.value;
+                videoPlayer.src = selectedVideo;
+                videoPlayer.play();
+            });
+
+            videoPlayer.addEventListener("ended", function () {
+                playNextVideo();
+            });
+        });
+    </script>
+
 </body>
 
 </html>
